@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="./templates/script.js"></script>
+    <link rel="stylesheet" href="./templates/style.css">
+</head>
+<body onload="includeHTML(); render();">
+
+    <div id="leftSideSection" class="">
+        <div class="leftSideSection">
+            <div id="mainLeftSideLinks">        
+                <a href="../index.html"><img class="headerLogo" src="img/michagram.png"></a>
+
+                <a class="ankerLinks mobile-d-none" href="#"><img class="postIcon" src="img/homeicon.png"><span class="itemLabel">Home</span</a>
+                <a class="ankerLinks mobile-d-none" href="#"><img class="postIcon" src="img/search-icon.png"><span class="itemLabel">Search</span></a>
+                <a class="ankerLinks mobile-d-none" href="#"><img class="postIcon" src="img/compass-icon.png"><span class="itemLabel">Explore</span></a>
+                <a class="ankerLinks mobile-d-none" href="#"><img class="postIcon" src="img/video-icon.png"><span class="itemLabel">Reels</span></a>
+                <a class="ankerLinks mobile-d-none" href="#"><img class="postIcon" src="img/messenger.png"><span class="messageLabel">Messages</span></a>
+                <a class="ankerLinks mobile-d-none" href="#"><img class="postIcon" src="img/like.png"><span class="notificationLabel">Notifications</span></a>
+                <a class="ankerLinks mobile-d-none" href="#"><img class="postIcon" src="img/add-icon.png"><span class="itemLabel">Create</span></a>
+                <a class="ankerLinks mobile-d-none" href="#"><img class="postIcon" src="img/profile-icon.png"><span class="itemLabel">Profile</span></a>
+
+                <div class="mobileTopIcons">
+                    <a class="ankerLinks" href="#"><img class="postIcon" src="img/like.png"><span class="notificationLabel">Notifications</span></a>
+                    <a class="ankerLinks" href="#"><img class="postIcon" src="img/messenger.png"><span class="messageLabel">Messages</span></a>
+                </div>
+
+            </div>
+            <div id="bottomLeftLinks">
+                <a class="ankerLinks mobile-d-none" href="#"><img class="postIcon" src="img/@icon.png"><span class="itemLabel">Threads</span></a>
+                <a class="ankerLinks mobile-d-none" href="#"><img class="postIcon" src="img/menu.png"><span class="itemLabel">More</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div w3-include-html="./templates/header.html">
+    </div>
+
+    <div class="rightSideAndMainContent">
+    <div id="content">
+        
+    </div>
+    <section id="rightSideSection" class="rightSideSection">
+        
+        <div class="rightSideProfileContainer">
+            <div class="switchProfileContainer">
+                <a class="d-align-center"><img class="rightSideImg switchImg" src="img/mkc.gallery-img.jpg"></a>
+                <div class="d-column rightSideProfiles">
+                    <a class="rightSideProfileName">mkc.gallery</a>
+                    <span class="suggestionLetter">Mika. K. Consciousness</span>
+                </div>
+            </div>
+            <a href="#" class="blueLink">Switch</a>
+        </div>
+
+        <div class="suggestedSeeAllContainer">
+            <h4>Suggested for you</h4>
+            <a href="#" class="greyLink">See all</a>
+        </div>
+
+        <div class="rightSideLinkContainer">
+            <div class="switchProfileContainer">
+                <a class="d-align-center"><img class="rightSideImg switchImg" src="img/eth-Icon.png"></a>
+                <div class="d-column rightSideProfiles">
+                    <a class="rightSideProfileName">Ethereum is shit</a>
+                    <span class="suggestionLetter">Suggested for you</span>
+                </div>
+            </div>
+            <a href="#" class="blueLink">Follow</a>
+        </div>
+        <div class="rightSideLinkContainer">
+            <div class="switchProfileContainer">
+                <a class="d-align-center"><img class="rightSideImg switchImg" src="img/bitcoin.png"></a>
+                <div class="d-column rightSideProfiles">
+                    <a class="rightSideProfileName">Bitcoin Family</a>
+                    <span class="suggestionLetter">Suggested for you</span>
+                </div>
+            </div>
+            <a href="#" class="blueLink">Follow</a>
+        </div>
+        <div class="rightSideLinkContainer">
+            <div class="switchProfileContainer">
+                <a class="d-align-center"><img class="rightSideImg switchImg" src="img/xrpIcon.png"></a>
+                <div class="d-column rightSideProfiles">
+                    <a class="rightSideProfileName">XRP armee</a>
+                    <span class="suggestionLetter">Suggested for you</span>
+                </div>
+            </div>
+            <a href="#" class="blueLink">Follow</a>
+        </div>
+        <div class="rightSideLinkContainer">
+            <div class="switchProfileContainer">
+                <a class="d-align-center"><img class="rightSideImg switchImg" src="img/cryptoswapicon.png"></a>
+                <div class="d-column rightSideProfiles">
+                    <a class="rightSideProfileName">Crypto Education</a>
+                    <span class="suggestionLetter">Suggested for you</span>
+                </div>
+            </div>
+            <a href="#" class="blueLink">Follow</a>
+        </div>
+        <div class="rightSideLinkContainer">
+            <div class="switchProfileContainer">
+                <a class="d-align-center"><img class="rightSideImg switchImg" src="img/comedyIcon.png"></a>
+                <div class="d-column rightSideProfiles">
+                    <a class="rightSideProfileName">Comedy Channel</a>
+                    <span class="suggestionLetter">Suggested for you</span>
+                </div>
+            </div>
+            <a href="#" class="blueLink">Follow</a>
+        </div>
+
+    </section>
+    </div>
+
+    <div id="greyBackground" class="greyBackground d-none">
+    </div>
+
+    <div onclick="resume(event)" id="imgAndComments" class="imgAndCommentsContainer d-none">
+
+    </div>
+
+
+    <div w3-include-html="./templates/footer.html">
+    </div>
+</body>
+</html>
